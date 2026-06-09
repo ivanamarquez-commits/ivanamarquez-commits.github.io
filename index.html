@@ -1,50 +1,138 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Primeiro Site</title>
-<style>
- body {
-    font-family: Arial;
-     max-width: 600px;
-     margin: 40px auto;
-     padding: 0 20px;
-     background-color: #f0f7ff;
-}
- h1 { color: #2b6cb0; text-align: center; }
-   .card {
-     background: white;
-     padding: 20px;
-     border-radius: 8px;
-     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
- }
-   button {
-     background: #3182ce;
-     color: white;
-     border: none;
-     padding: 10px 20px;
-     border-radius: 4px;
-   }
- </style>
-</head>
-<body>
-
-    <header>
-        <h1>Meu Primeiro Site</h1>
-        <p>Feito com HTML e CSS</p>
-    </header>
-
-    <main>
-        <section class="card">
-            <h2>Sobre</h2>
-            <p>
-                Este é um exemplo simples de site hospedado no GitHub.
-            </p>
-        </section>
-
-        <button>Saiba Mais</button>
-    </main>
-
-</body>
-</html>
+ <html lang="pt-BR">
+ <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Conexão Escola</title>
+   <style>
+     /* Estilo geral */
+     * {
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+       font-family: Arial, sans-serif;
+     }
+     body {
+       background-color: #f8f9fa; /* cinza muito claro */
+       color: #333;
+       line-height: 1.6;
+     }
+     /* Cabeçalho */
+     header {
+       background-color: #ff9843; /* laranja - cor principal */
+       color: white;
+       padding: 1.5rem;
+       text-align: center;
+     }
+     nav {
+       background-color: #e6893b;
+       padding: 0.8rem;
+       margin-top: 0.5rem;
+     }
+     nav ul {
+       list-style: none;
+       display: flex;
+       justify-content: center;
+       gap: 2rem;
+       flex-wrap: wrap;
+     }
+     nav a {
+       color: white;
+       text-decoration: none;
+       font-weight: bold;
+     }
+     nav a:hover {
+       text-decoration: underline;
+     }
+     /* Conteúdo principal */
+     main {
+       max-width: 900px;
+       margin: 2rem auto;
+       padding: 0 1.5rem;
+     }
+     section {
+       background-color: white;
+       margin-bottom: 2rem;
+       padding: 1.5rem;
+       border-radius: 8px;
+       box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+       border-left: 5px solid #4caf50; /* verde - detalhes */
+     }
+     h2 {
+       color: #2196f3; /* azul claro */
+       margin-bottom: 1rem;
+       font-size: 1.4rem;
+     }
+     /* Botões */
+     button {
+       background-color: #4caf50; /* verde */
+       color: white;
+       border: none;
+       padding: 0.7rem 1.2rem;
+       border-radius: 4px;
+       cursor: pointer;
+       font-size: 1rem;
+       margin-top: 0.8rem;
+     }
+     button:hover {
+       background-color: #43a047;
+     }
+     /* Rodapé */
+     footer {
+       background-color: #2196f3; /* azul claro */
+       color: white;
+       text-align: center;
+       padding: 1.2rem;
+       margin-top: 2rem;
+     }
+   </style>
+ </head>
+ <body>
+   <!-- Cabeçalho e Menu -->
+   <header>
+     <h1>📚 Conexão Escola</h1>
+     <p>Espaço de união e convívio escolar</p>
+     
+     <nav>
+       <ul>
+         <li><a href="#recados">Recados</a></li>
+         <li><a href="#trabalhos">Trabalhos</a></li>
+         <li><a href="#agenda">Agenda</a></li>
+         <li><a href="#dicas">Dicas</a></li>
+         <li><a href="#galeria">Galeria</a></li>
+       </ul>
+     </nav>
+   </header>
+   <!-- Conteúdo Principal -->
+   <main>
+     <section id="recados">
+       <h2>📢 Recados e Avisos Rápidos</h2>
+       <p>Espaço para compartilhar mensagens importantes e novidades da escola.</p>
+       <button>Ver recados</button>
+     </section>
+     <section id="trabalhos">
+       <h2>🎨 Trabalhos e Atividades</h2>
+       <p>Apresentação de projetos feitos pelos alunos e atividades coletivas realizadas na escola.</p>
+       <button>Explorar trabalhos</button>
+     </section>
+     <section id="agenda">
+       <h2>🗓️ Agenda Comunitária</h2>
+       <p>Datas importantes: festas, reuniões, eventos e comemorações da comunidade escolar.</p>
+       <button>Ver calendário</button>
+     </section>
+     <section id="dicas">
+       <h2>💡 Dicas e Orientações</h2>
+       <p>Sugestões de estudo, materiais e orientações para alunos e famílias.</p>
+       <button>Ler dicas</button>
+     </section>
+     <section id="galeria">
+       <h2>📸 Galeria de Fotos</h2>
+       <p>Registros de atividades, eventos e momentos de convívio escolar.</p>
+       <button>Ver fotos</button>
+     </section>
+   </main>
+   <footer>
+     <p>&copy; 2026 - Conexão Escola | Comunidade unida e participativa</p>
+   </footer>
+ </body>
+     </html>
